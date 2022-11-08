@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v1.9.1
+## (2022-11-08)
+
+
+<details>
+<summary> Update dependency etcher-sdk to 7.4.2 [Renovate Bot] </summary>
+
+> ## etcher-sdk-7.4.2
+> ### (2022-11-04)
+> 
+> * update drivelist and node-raspberypi-usbboot dependencies [Zane Hitchcox]
+> 
+> ## etcher-sdk-7.4.1
+> ### (2022-10-25)
+> 
+> * Update dependency typedoc-plugin-markdown to 2.4.2 [Renovate Bot]
+> 
+</details>
+
 # v1.9.0
 ## (2022-11-08)
 

@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update dependency etcher-sdk to 7.4.2
+      hash: 3ad74da978f71fe2fd48a42d19f16545c119f828
+      body: |
+        Update etcher-sdk to 7.4.2
+
+        Update etcher-sdk from 7.4.0 to 7.4.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: update drivelist and node-raspberypi-usbboot dependencies
+              hash: 838399bae7f2d76674c8f76957cafa8875a75d9e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Zane Hitchcox
+              nested: []
+          version: etcher-sdk-7.4.2
+          title: ""
+          date: 2022-11-04T13:35:21.852Z
+        - commits:
+            - subject: Update dependency typedoc-plugin-markdown to 2.4.2
+              hash: c77a5a14462418412069fb48581ce4535d1f4b47
+              body: |
+                Update typedoc-plugin-markdown to 2.4.2
+
+                Update typedoc-plugin-markdown from 2.3.1 to 2.4.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Renovate Bot
+              nested: []
+          version: etcher-sdk-7.4.1
+          title: ""
+          date: 2022-10-25T22:01:04.805Z
+  version: 1.9.1
+  date: 2022-11-08T21:45:37.388Z
+- commits:
     - subject: Update dependency awscli to 1.27.5
       hash: 26dc2d19e56354b0f43c9af2f1d6dd51a4a0b235
       body: |
@@ -727,11 +768,11 @@
     - subject: Add support for basic auth when downloading images from URL.
       hash: b2d0c1c9ddbbfe87d5a905d420d615821610e825
       body: >
-        When selecting "Flash from URL" the user can optionally provide a username
-        and password for basic authentication. The authentication input fields
-        are collapsed by default. When the authentication input fields are
-        collapsed after entering values the values are cleared to ensure that
-        the user sees all parameter passed to the server.
+        When selecting "Flash from URL" the user can optionally provide a
+        username and password for basic authentication. The authentication input
+        fields are collapsed by default. When the authentication input fields
+        are collapsed after entering values the values are cleared to ensure
+        that the user sees all parameter passed to the server.
       footer:
         Change-Type: minor
         change-type: minor
@@ -1288,7 +1329,8 @@
             - subject: Ignore ENOENT errors on unlink in withTmpFile
               hash: 7bb2a23c4e94dcda6a7b494fe0435c0b59b56b06
               body: >
-                The temporary file might have been already deleted by cleanupTmpFiles
+                The temporary file might have been already deleted by
+                cleanupTmpFiles
               footer:
                 Change-type: patch
                 change-type: patch
@@ -1358,7 +1400,8 @@
                     - subject: Pass strings between methods as std::string instead of char *
                       hash: 1ec6a8ffc4c9e138b78210f0db84a9ebd6c9182b
                       body: >
-                        - Fixes "basic_string::_M_construct null not valid" exception
+                        - Fixes "basic_string::_M_construct null not valid"
+                        exception
                           aborting program, because WCharToUtf8() returned NULL
                           in some cases, and NULL was being fed to string constructor.
                         - Fixes memory leak because memory allocated with calloc()
@@ -3446,8 +3489,8 @@
         change-type: patch
       subject: Fixes the Command for macOS drive recovery
       body: >-
-        Changes the documentation to update the disktutil command which didn't fix
-        my case, cause the boot partition was broken.
+        Changes the documentation to update the disktutil command which didn't
+        fix my case, cause the boot partition was broken.
 
         This way it rewrites the drive into a FAT32 partition editable in Unix/Windows.
     - hash: b3f25c176b1bdb487d1a7bf111d7f170fe008842
@@ -6376,7 +6419,8 @@
         changelog-entry: Add support for configuration files
       subject: "feat(gui): Add ability to read settings from a config file"
       body: >-
-        This adds the capability to configure settings via a `.etcher.json` file,
+        This adds the capability to configure settings via a `.etcher.json`
+        file,
 
         either in the user's home directory, or the current working directory.
 
@@ -6494,7 +6538,8 @@
         change-type: patch
       subject: "doc: Update MAINTAINERS.md with Symantec Whitelisting"
       body: >-
-        This adds instructions for submitting Etcher for false positive detection
+        This adds instructions for submitting Etcher for false positive
+        detection
 
         to Symantec Endpoint Protection.
     - hash: bb2dac75040554c0ba2c7e50ff9ecd61608e7d38
@@ -6670,7 +6715,8 @@
         change-type: patch
       subject: "fix(image-writer): Remove use of _.isError"
       body: >-
-        `_.isError()` returns `true` for anything that has a `name` and `message`
+        `_.isError()` returns `true` for anything that has a `name` and
+        `message`
 
         property, causing the check here to always keep the plain object as error.
     - hash: 355373f24df6be0989fad9429c2230166b33a3bf
@@ -6686,7 +6732,8 @@
         change-type: patch
       subject: "upgrade(package): Update drivelist 6.1.5 -> 6.1.7"
       body: >-
-        This fixes a ReferenceError that could occur when the DeviceNode was null,
+        This fixes a ReferenceError that could occur when the DeviceNode was
+        null,
 
         as well as devices being null when run after the system recovers from sleep / standby.
     - hash: 6e7484d3dabc2aeaa7cd471822d7019860cc4a5c
@@ -7522,7 +7569,8 @@
         changelog-entry: Remove stale `invalidKey` check in store.
       subject: "refactor: remove stale invalid key check in store"
       body: >-
-        We remove a piece of code checking whether `_.keys` returns any non-string
+        We remove a piece of code checking whether `_.keys` returns any
+        non-string
 
         values in its array, but per the Lodash documentation `_.keys` always returns an
 
@@ -7550,7 +7598,8 @@
         changelog-entry: Make the drive-selector button orange on warnings.
       subject: "feat(GUI): warning makes drive-selector button orange"
       body: >-
-        We make the drive-selector button orange when there is a warning attached
+        We make the drive-selector button orange when there is a warning
+        attached
 
         to the image-drive pair.
     - hash: 4ce89f97fe02d714ce7f247a6a03ad6d326c3a8a
