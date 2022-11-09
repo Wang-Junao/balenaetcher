@@ -9,6 +9,11 @@ inputs:
     description: "JSON stringified object containing all the secrets from the calling workflow"
     required: true
 
+  # --- custom environment
+  VERBOSE:
+    type: string
+    default: "true"
+
 runs:
   # https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
   using: "composite"
@@ -16,7 +21,7 @@ runs:
     - name: Get release version
       if: runner.os == 'Linux'
       id: get_release
-      shell: bash --noprofile --norc -eo pipefail -x {0}
+      shell: bash
       run: |
         set -ea
 
@@ -27,7 +32,7 @@ runs:
     # https://docs.github.com/en/rest/releases
     - name: Finalize GitHub release
       if: runner.os == 'Linux'
-      shell: bash --noprofile --norc -eo pipefail -x {0}
+      shell: bash
       run: |
         set -ea
 
