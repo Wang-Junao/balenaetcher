@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v1.11.0
+## (2022-11-20)
+
+* minor: optimize i18n [r-q]
+
 # v1.10.0
 ## (2022-11-10)
 
